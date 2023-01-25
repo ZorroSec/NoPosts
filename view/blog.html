@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../public/timezone.js"></script>
+    <title>blog</title>
+</head>
+<body onload="timezone()">
+    <header class="header">
+        <ul>
+            <li>
+                <div class="logo">
+                    <h2>
+                        NoPosts
+                    </h2>
+                </div>
+            </li>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/about">blog</a>
+            </li>
+        </ul>
+    </header>
+    <div class="conteiner">
+        <div id="hour"></div>
+        <div class="blogPostLogin">
+            <div class="blogUser">
+                <input type="text" name="username" id="username" placeholder="Username...">
+            </div>
+            <div class="blogPost">
+                <textarea name="post" id="post" cols="70" rows="5">Hello friend...</textarea>
+            </div>
+            <div class="blogBtn">
+                <button id="btn">Enviar</button>
+            </div>
+        </div>
+        <div id="posts"></div>
+    </div>
+
+
+    <footer>
+        <i>&copy;Zezao</i>
+    </footer>
+
+    <script src="../public/blog.js" type="module"></script>
+</body>
+</html>

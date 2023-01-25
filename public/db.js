@@ -1,0 +1,3 @@
+const postsList = []
+
+export { postsList }
